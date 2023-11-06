@@ -12,6 +12,10 @@ public class RockRoll : MonoBehaviour
 
     private float rollingSpeed;
     public GameObject timeline;
+    private Vector3 startPosition;
+    private Vector3 endPosition;
+
+    private bool reachedEndPosition = false;
 
     RangeSlider rangeSlider;
 
@@ -22,16 +26,11 @@ public class RockRoll : MonoBehaviour
         rangeSlider.LowValue = 0.3f;
         rangeSlider.HighValue = 0.7f;
         rollingSpeed = 5f;
+        startPosition = transform.position;
+        endPosition = new Vector3(startPosition.x, startPosition.y, startPosition.z - 10.0f);
     }
     // Update is called once per frame
-    public void Rolling()
-    {
-            rangeSlider = timeline.GetComponent<RangeSlider>();
-            rollingSpeed = (1/ (rangeSlider.HighValue - rangeSlider.LowValue)) * 5;
-            transform.position += Vector3.back * Time.deltaTime * rollingSpeed;
-            transform.Rotate(Vector3.forward, 360 * Time.deltaTime * rollingSpeed/5);
-       
-    }
+
 
     public void ChangeState(){
         isRolling = true;
@@ -44,12 +43,19 @@ public class RockRoll : MonoBehaviour
             rangeSlider = timeline.GetComponent<RangeSlider>();
             timer = rangeSlider.LowValue * 5;
         }
-        else if(isRolling == true){
+        else if(isRolling == true && reachedEndPosition == false){
             timer = timer - Time.deltaTime;
             if(timer <= 0){
-                Rolling();
+                rangeSlider = timeline.GetComponent<RangeSlider>();
+                rollingSpeed = (1/ (rangeSlider.HighValue - rangeSlider.LowValue));
+                if(transform.position == endPosition){
+                    reachedEndPosition = true;
+                }
+                transform.position = Vector3.Lerp(transform.position, endPosition, Time.deltaTime * rollingSpeed);
+                transform.Rotate(Vector3.forward, 360 * Time.deltaTime * rollingSpeed/5);
             }
         }
+        
         
     }
 }
