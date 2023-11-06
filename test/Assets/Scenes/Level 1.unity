@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 25565031}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.029 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 67920260}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.029 (3)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -454,41 +454,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183213683}
   m_Mesh: {fileID: 1200193828576432626, guid: 934d80f02b53e2945af20c99ec24230c, type: 3}
---- !u!21 &184929593
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Height Fog Global
-  m_Shader: {fileID: 4800000, guid: 3a7ef1b66bafb7a448a880ef76d2e6e6, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3001
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _AdvancedCat: 1
-    - _AlphaCutoff: 0.5
-    - _Banner: 1
-    - _DirectionalCat: 1
-    - _FogAxisMode: 1
-    - _FogCat: 1
-    - _HeightFogGlobal: 1
-    - _IsHeightFogShader: 1
-    - _NoiseCat: 1
-    - _SkyboxCat: 1
-    m_Colors:
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &269619597
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +727,7 @@ GameObject:
   - component: {fileID: 378753516}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.036 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1392,7 +1357,7 @@ MonoBehaviour:
   manualPositionAndScale: 0
   renderPriority: 1
   styledSpace0: 0
-  overrideMaterial: {fileID: 1909635676}
+  overrideMaterial: {fileID: 1945605590}
   overrideCamToVolumeDistance: 14.444645
   overrideVolumeDistanceFade: 15
   version: 0
@@ -1416,7 +1381,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 184929593}
+  - {fileID: 696405309}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1476,7 +1441,7 @@ GameObject:
   - component: {fileID: 479623555}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.015 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1714,7 +1679,7 @@ GameObject:
   - component: {fileID: 517322961}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.035 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1824,7 +1789,7 @@ GameObject:
   - component: {fileID: 542328385}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.031 (3)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2045,7 +2010,7 @@ GameObject:
   - component: {fileID: 572626034}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.029 (2)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2288,7 +2253,7 @@ GameObject:
   - component: {fileID: 601748574}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.037 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2639,6 +2604,41 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!21 &696405309
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Height Fog Global
+  m_Shader: {fileID: 4800000, guid: 3a7ef1b66bafb7a448a880ef76d2e6e6, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _AdvancedCat: 1
+    - _AlphaCutoff: 0.5
+    - _Banner: 1
+    - _DirectionalCat: 1
+    - _FogAxisMode: 1
+    - _FogCat: 1
+    - _HeightFogGlobal: 1
+    - _IsHeightFogShader: 1
+    - _NoiseCat: 1
+    - _SkyboxCat: 1
+    m_Colors:
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &719881150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2654,7 +2654,7 @@ GameObject:
   - component: {fileID: 719881155}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.021 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2949,7 +2949,7 @@ GameObject:
   - component: {fileID: 759327632}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.030 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3236,7 +3236,7 @@ GameObject:
   - component: {fileID: 867353476}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.029 (4)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3685,7 +3685,7 @@ GameObject:
   - component: {fileID: 960678445}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.031 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3795,7 +3795,7 @@ GameObject:
   - component: {fileID: 972455903}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.008 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4253,7 +4253,7 @@ GameObject:
   - component: {fileID: 1167234505}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.008 (2)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4394,7 +4394,7 @@ GameObject:
   - component: {fileID: 1248539439}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.031 (4)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4643,7 +4643,7 @@ GameObject:
   - component: {fileID: 1342389710}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.030 (2)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5080,7 +5080,7 @@ GameObject:
   - component: {fileID: 1460798750}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.007 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5377,7 +5377,7 @@ GameObject:
   - component: {fileID: 1581133454}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.007 (3)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5629,7 +5629,7 @@ GameObject:
   - component: {fileID: 1684469412}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.037 (2)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5837,7 +5837,7 @@ GameObject:
   - component: {fileID: 1717294475}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.017 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6312,6 +6312,7 @@ GameObject:
   - component: {fileID: 1878426149}
   - component: {fileID: 1878426150}
   - component: {fileID: 1878426151}
+  - component: {fileID: 1878426152}
   m_Layer: 0
   m_Name: Rock1
   m_TagString: Moveable
@@ -6498,65 +6499,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!21 &1909635676
-Material:
-  serializedVersion: 8
+--- !u!114 &1878426152
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Local
-  m_Shader: {fileID: 4800000, guid: a3a3bc8785681554d9558e2ea68f100e, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _Banner: 1
-    - _DirectionalCat: 1
-    - _DirectionalFalloff: 1
-    - _DirectionalIntensity: 1
-    - _FogAxisMode: 1
-    - _FogCat: 1
-    - _FogColorDuo: 1
-    - _FogDistanceEnd: 57.5
-    - _FogDistanceFalloff: 1
-    - _FogDistanceStart: -60.31
-    - _FogHeightEnd: 15
-    - _FogHeightFalloff: 1
-    - _FogHeightStart: 0
-    - _FogIntensity: 1
-    - _FogLayersMode: 0
-    - _IsHeightFogPreset: 1
-    - _IsHeightFogShader: 1
-    - _NoiseCat: 1
-    - _NoiseDistanceEnd: 30
-    - _NoiseIntensity: 0.548
-    - _NoiseModeBlend: 1
-    - _NoiseScale: 30
-    - _SkyboxCat: 1
-    - _SkyboxFogBottom: 0
-    - _SkyboxFogFalloff: 1
-    - _SkyboxFogFill: 0
-    - _SkyboxFogHeight: 1
-    - _SkyboxFogIntensity: 0.918
-    - _SkyboxFogOffset: -0.003
-    m_Colors:
-    - _DirectionalColor: {r: 0.52045554, g: 0.74264705, b: 0.098291524, a: 1}
-    - _DirectionalDir: {r: -0, g: 0.9396926, b: -0.34202027, a: 0}
-    - _FogAxisOption: {r: 0, g: 1, b: 0, a: 0}
-    - _FogColorEnd: {r: 1.531588, g: 1.108501, b: 0.52979445, a: 1}
-    - _FogColorStart: {r: 0.7169812, g: 0.07214899, b: 0.24801245, a: 1}
-    - _NoiseSpeed: {r: 0.5, g: 0.5, b: 0, a: 0}
-  m_BuildTextureStacks: []
+  m_GameObject: {fileID: 1878426142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c40105075b5d2469507f7a1cd56d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collideWithGroundSound: {fileID: 8300000, guid: 79c7abf581e503f4bacb1b20fde8ef81,
+    type: 3}
 --- !u!1 &1912316280
 GameObject:
   m_ObjectHideFlags: 0
@@ -6753,7 +6709,7 @@ GameObject:
   - component: {fileID: 1927034932}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.031 (2)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6924,6 +6880,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934928615}
   m_CullTransparentMesh: 1
+--- !u!21 &1945605590
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Local
+  m_Shader: {fileID: 4800000, guid: a3a3bc8785681554d9558e2ea68f100e, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Banner: 1
+    - _DirectionalCat: 1
+    - _DirectionalFalloff: 1
+    - _DirectionalIntensity: 1
+    - _FogAxisMode: 1
+    - _FogCat: 1
+    - _FogColorDuo: 1
+    - _FogDistanceEnd: 57.5
+    - _FogDistanceFalloff: 1
+    - _FogDistanceStart: -60.31
+    - _FogHeightEnd: 15
+    - _FogHeightFalloff: 1
+    - _FogHeightStart: 0
+    - _FogIntensity: 1
+    - _FogLayersMode: 0
+    - _IsHeightFogPreset: 1
+    - _IsHeightFogShader: 1
+    - _NoiseCat: 1
+    - _NoiseDistanceEnd: 30
+    - _NoiseIntensity: 0.548
+    - _NoiseModeBlend: 1
+    - _NoiseScale: 30
+    - _SkyboxCat: 1
+    - _SkyboxFogBottom: 0
+    - _SkyboxFogFalloff: 1
+    - _SkyboxFogFill: 0
+    - _SkyboxFogHeight: 1
+    - _SkyboxFogIntensity: 0.918
+    - _SkyboxFogOffset: -0.003
+    m_Colors:
+    - _DirectionalColor: {r: 0.52045554, g: 0.74264705, b: 0.098291524, a: 1}
+    - _DirectionalDir: {r: -0, g: 0.9396926, b: -0.34202027, a: 0}
+    - _FogAxisOption: {r: 0, g: 1, b: 0, a: 0}
+    - _FogColorEnd: {r: 1.531588, g: 1.108501, b: 0.52979445, a: 1}
+    - _FogColorStart: {r: 0.7169812, g: 0.07214899, b: 0.24801245, a: 1}
+    - _NoiseSpeed: {r: 0.5, g: 0.5, b: 0, a: 0}
+  m_BuildTextureStacks: []
 --- !u!1 &2050257141
 GameObject:
   m_ObjectHideFlags: 0
@@ -7015,7 +7030,7 @@ GameObject:
   - component: {fileID: 2057936970}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.025 (1)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7125,7 +7140,7 @@ GameObject:
   - component: {fileID: 2061899475}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.030"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7235,7 +7250,7 @@ GameObject:
   - component: {fileID: 2075305743}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.036 (2)"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7346,7 +7361,7 @@ GameObject:
   - component: {fileID: 2087469144}
   m_Layer: 0
   m_Name: TestCube
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7749,7 +7764,7 @@ GameObject:
   - component: {fileID: 7808024591392221344}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.003"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8106,7 +8121,7 @@ GameObject:
   - component: {fileID: 6866131673278198681}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.023"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8141,7 +8156,7 @@ GameObject:
   - component: {fileID: 8173542464624486969}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.027"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8501,7 +8516,7 @@ GameObject:
   - component: {fileID: 9051347255092052948}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.018"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8523,6 +8538,7 @@ GameObject:
   - component: {fileID: 5900487565906880918}
   - component: {fileID: 5900487565906880919}
   - component: {fileID: 5900487565906880920}
+  - component: {fileID: 5900487565906880921}
   m_Layer: 0
   m_Name: WoodLog_Moss
   m_TagString: Moveable
@@ -8595,7 +8611,7 @@ GameObject:
   - component: {fileID: 7649501089291204224}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.038"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8707,7 +8723,7 @@ GameObject:
   - component: {fileID: 4219954739328183344}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.025"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8909,7 +8925,7 @@ GameObject:
   - component: {fileID: 8935815179089691730}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.011"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9144,7 +9160,7 @@ GameObject:
   - component: {fileID: 6532588127132969442}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.017"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9271,7 +9287,7 @@ GameObject:
   - component: {fileID: 5873101596208540742}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.037"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9384,7 +9400,7 @@ GameObject:
   - component: {fileID: 4087903154502460952}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.029"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9429,7 +9445,7 @@ GameObject:
   - component: {fileID: 6450223879885373346}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.019"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9449,7 +9465,7 @@ GameObject:
   - component: {fileID: 4102372673643165617}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.035"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9527,7 +9543,7 @@ GameObject:
   - component: {fileID: 4242905182592202684}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.036"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9820,7 +9836,7 @@ GameObject:
   - component: {fileID: 6526035314165200745}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.002"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10057,7 +10073,7 @@ GameObject:
   - component: {fileID: 5736140035312521995}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.032"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10324,6 +10340,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5900487565906880921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936578644913210540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c40105075b5d2469507f7a1cd56d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collideWithGroundSound: {fileID: 8300000, guid: 79c7abf581e503f4bacb1b20fde8ef81,
+    type: 3}
 --- !u!1 &5931017463195751254
 GameObject:
   m_ObjectHideFlags: 0
@@ -10574,7 +10604,7 @@ GameObject:
   - component: {fileID: 6467700337339897087}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.026"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10843,7 +10873,7 @@ GameObject:
   - component: {fileID: 8359833209651951128}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.022"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10863,7 +10893,7 @@ GameObject:
   - component: {fileID: 8936127766291830756}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.015"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10883,7 +10913,7 @@ GameObject:
   - component: {fileID: 7765290692182102218}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.007"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10903,7 +10933,7 @@ GameObject:
   - component: {fileID: 7297668804287357618}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.021"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10974,7 +11004,7 @@ GameObject:
   - component: {fileID: 8457825055837339116}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.031"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10994,7 +11024,7 @@ GameObject:
   - component: {fileID: 7521500264165135758}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.030"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11426,7 +11456,7 @@ GameObject:
   - component: {fileID: 8661392441009006773}
   m_Layer: 0
   m_Name: "\u7ACB\u65B9\u4F53.008"
-  m_TagString: Untagged
+  m_TagString: SandGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11487,8 +11517,10 @@ GameObject:
   - component: {fileID: 8832708560872053385}
   - component: {fileID: 8832708560872053386}
   - component: {fileID: 8832708560872053387}
+  - component: {fileID: 8832708560872053388}
+  - component: {fileID: 8832708560872053389}
   m_Layer: 0
-  m_Name: Rock_1
+  m_Name: Rock2
   m_TagString: Moveable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11518,7 +11550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7df2a22bd5abd843ba8628843b3c589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 4803c0d56c6712b4f8a20d032c74d1dc, type: 3}
 --- !u!54 &8832708560872053385
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11560,6 +11592,116 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9177871ad4adc92469a718c348e7f011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8832708560872053388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8832708560872053381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c40105075b5d2469507f7a1cd56d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collideWithGroundSound: {fileID: 8300000, guid: 79c7abf581e503f4bacb1b20fde8ef81,
+    type: 3}
+--- !u!82 &8832708560872053389
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8832708560872053381}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8920394811735367777
 GameObject:
   m_ObjectHideFlags: 0
@@ -11693,7 +11835,7 @@ MeshCollider:
   m_GameObject: {fileID: 8958308261601677398}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
