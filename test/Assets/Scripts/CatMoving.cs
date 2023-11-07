@@ -24,7 +24,7 @@ public class CatMoving : MonoBehaviour
     void Start()
     {
         motionBegin = false;
-        speed = 1f;
+        speed = 1.3f;
         currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
         transform.position = currentWaypoint.position;
 
@@ -37,7 +37,7 @@ public class CatMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(motionBegin == true && isCollided == false){
+        if(motionBegin == true && isCollided == false && DestinationTest.isFinished == false){
                 transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, speed * Time.deltaTime);
                 if(Vector3.Distance(transform.position, currentWaypoint.position) < distanceThreshold){
                         currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);

@@ -9,11 +9,10 @@ public class ObjectDrag : MonoBehaviour
     public AudioClip clip;
     private AudioSource audioSource;
 
+
     private void ifStart(){
-        if(BeginningAnimation.isReadyForPlayer == true){
             OnMouseDown();
             OnMouseDrag();
-        }
     }
     private void OnMouseDown()
     {
@@ -31,7 +30,9 @@ public class ObjectDrag : MonoBehaviour
     private void OnMouseDrag()
     {
         Vector3 pos = BuildingSystem.GetMouseWorldPosition() + offset;
-        transform.position = BuildingSystem.current.SnapCoordinateToGrid(pos);
+        if(BeginningAnimation.isReadyForPlayer == true && RockRoll.isVideoStarted == false){
+            transform.position = BuildingSystem.current.SnapCoordinateToGrid(pos);
+        }
     }
 
   

@@ -5,7 +5,7 @@ using UnityEngine;
 public class FallIntoWaterSound : MonoBehaviour
 {
     public AudioClip fallingSound;
-    private AudioSource audioSource;// Start is called before the first frame update
+    private AudioSource audioSource;
     
     private void OnTriggerEnter(Collider other) {
         if(BeginningAnimation.isReadyForPlayer == true){

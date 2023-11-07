@@ -21,7 +21,7 @@ public class FrameMotion : MonoBehaviour
     void Update()
     {
         if(isStarted == true && transform.localPosition.x < 900){
-            transform.localPosition += Vector3.right * Time.deltaTime * floatSpeed * 100;
+            transform.localPosition += Vector3.right * Time.deltaTime * floatSpeed * 85;
         }
         
     }

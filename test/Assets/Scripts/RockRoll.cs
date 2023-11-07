@@ -7,7 +7,8 @@ using UnityEngine.UI.Extensions;
 public class RockRoll : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static bool isRolling;
+    public static bool isVideoStarted = false;
+
     private float timer = 0;
 
     private float rollingSpeed;
@@ -17,45 +18,69 @@ public class RockRoll : MonoBehaviour
 
     private bool reachedEndPosition = false;
 
+    public AudioClip rollingSound;
+    private AudioSource audioSource;
+    private int playTime;
+
+
     RangeSlider rangeSlider;
 
     void Start()
     {
-        isRolling = false;
+        isVideoStarted = false;
+        reachedEndPosition = false;
+
         rangeSlider = timeline.GetComponent<RangeSlider>();
-        rangeSlider.LowValue = 0.3f;
-        rangeSlider.HighValue = 0.7f;
+        rangeSlider.LowValue = 3f;
+        rangeSlider.HighValue = 7f;
+
         rollingSpeed = 5f;
+
         startPosition = transform.position;
-        endPosition = new Vector3(startPosition.x, startPosition.y, startPosition.z - 10.0f);
+        endPosition = new Vector3(startPosition.x, startPosition.y, startPosition.z - 7.2f);
+       
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = rollingSound;
+        audioSource.loop = true;
+        audioSource.volume = 100f;
+        playTime = 1;
     }
     // Update is called once per frame
 
 
     public void ChangeState(){
-        isRolling = true;
+        isVideoStarted = true;
     }
-
 
     void Update()
     {
-        if(isRolling == false){
+        if(isVideoStarted == false){
             rangeSlider = timeline.GetComponent<RangeSlider>();
-            timer = rangeSlider.LowValue * 5;
+            timer = rangeSlider.LowValue;
         }
-        else if(isRolling == true && reachedEndPosition == false){
+        else if(isVideoStarted == true && reachedEndPosition == false){
+           
             timer = timer - Time.deltaTime;
             if(timer <= 0){
+                
+                if(playTime == 1){
+                audioSource.Play();
+                playTime = 0;
+                }
+
                 rangeSlider = timeline.GetComponent<RangeSlider>();
-                rollingSpeed = (1/ (rangeSlider.HighValue - rangeSlider.LowValue));
-                if(transform.position == endPosition){
+                rollingSpeed = (10/ (rangeSlider.HighValue - rangeSlider.LowValue));
+
+                if(transform.position.z < endPosition.z + 0.05f && transform.position.z > endPosition.z - 0.05f){
                     reachedEndPosition = true;
                 }
                 transform.position = Vector3.Lerp(transform.position, endPosition, Time.deltaTime * rollingSpeed);
-                transform.Rotate(Vector3.forward, 360 * Time.deltaTime * rollingSpeed/5);
+                transform.Rotate(Vector3.forward, 360 * Time.deltaTime * rollingSpeed);
             }
         }
-        
+        else if(reachedEndPosition == true) {
+            audioSource.Stop();
+        }
         
     }
 }

@@ -171,8 +171,8 @@ Material:
     - _DepthThreshold: 900
     - _DetailNormalMapScale: 1
     - _DirectionalCat: 1
-    - _DirectionalFalloff: 2
-    - _DirectionalIntensity: 1
+    - _DirectionalFalloff: 4.33
+    - _DirectionalIntensity: 0.726
     - _DirectionalLightIntensity: 0
     - _DoubleSidedOutline: 1
     - _DstBlend: 0
@@ -184,10 +184,10 @@ Material:
     - _FogCat: 1
     - _FogColorDuo: 1
     - _FogDistanceEnd: 200
-    - _FogDistanceFalloff: 2.86
+    - _FogDistanceFalloff: 4.33
     - _FogDistanceStart: -200
     - _FogHeightEnd: 200
-    - _FogHeightFalloff: 2.79
+    - _FogHeightFalloff: 3.64
     - _FogHeightStart: 0
     - _FogIntensity: 1
     - _FogLayersMode: 0
@@ -257,7 +257,7 @@ Material:
     - _N_F_STIS: 0
     - _NoiseCat: 1
     - _NoiseDistanceEnd: 50
-    - _NoiseIntensity: 0.01
+    - _NoiseIntensity: 0.561
     - _NoiseModeBlend: 1
     - _NoiseScale: 0.5
     - _NoisyOutlineIntensity: 0
@@ -312,11 +312,11 @@ Material:
     - _SkinMatrixIndex: 0
     - _SkyboxCat: 1
     - _SkyboxFogBottom: 0.373
-    - _SkyboxFogFalloff: 1
+    - _SkyboxFogFalloff: 6.89
     - _SkyboxFogFill: 0.694
-    - _SkyboxFogHeight: 0.003
-    - _SkyboxFogIntensity: 0.866
-    - _SkyboxFogOffset: -1
+    - _SkyboxFogHeight: 0.994
+    - _SkyboxFogIntensity: 0.421
+    - _SkyboxFogOffset: 0.29
     - _SmoothObjectNormal: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
