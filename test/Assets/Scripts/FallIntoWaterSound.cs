@@ -13,7 +13,7 @@ public class FallIntoWaterSound : MonoBehaviour
             audioSource.clip = fallingSound;
             audioSource.loop = false;
             audioSource.volume = 100f;
-            if(other.gameObject.tag == "Obstacles"){
+            if(other.gameObject.tag == "Obstacles" || other.gameObject.tag == "Rock" || other.gameObject.tag == "Cat"){
                 audioSource.Play();
             }
         }

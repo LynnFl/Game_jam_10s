@@ -11,9 +11,9 @@ public class CountDown
     public int minute;
     public int second;
 
-    private int countDownTime;//倒计时剩余时间，秒为单位
+    private int countDownTime;
     public int CountDownTime { get { return countDownTime; } }
-    private int totalTime;//总时间，秒为单位
+    private int totalTime;
     public int TotalTime { get { return totalTime; } }
 
     public CountDown(int _hour,int _minute,int _second)
@@ -22,14 +22,13 @@ public class CountDown
         hour = _hour;
         minute = _minute;
         second = _second;
-        totalTime = 3600 * hour + 60 * minute + second;//计算总时间
+        totalTime = 3600 * hour + 60 * minute + second;
         countDownTime = totalTime;
     }
 
-    private float time = 0;//用来控制时间间隔
+    private float time = 0;
 
     /// <summary>
-    /// 更新剩余时间，间隔一秒，时间-1
     /// </summary>
     public void UpdateTime()
     {
@@ -44,16 +43,18 @@ public class CountDown
 //
 public class CountDownSlider : MonoBehaviour
 {
-    public Text countDownText;//倒计时文本
-    public Slider countDownSlider;//进度条显示
-    private Image sliderImg;//进度条填充图
-    public Button startCountDownBtn;//开始倒计时按钮
-    private CountDown countDown = null;//声明倒计时对象
+    public Text countDownText;
+    public Slider countDownSlider;
+    private Image sliderImg;
+    public Button startCountDownBtn;
+    private CountDown countDown = null;
 
     public GameManagerScript gameManagerScript;
     private bool isOver;
 
     public static bool isAbleToCount;
+
+    public CatMoving cat;
 
     void Start()
     {
@@ -93,11 +94,9 @@ public class CountDownSlider : MonoBehaviour
                 }
                 else if (countDownSlider.value==0)
                 {
-                    if(DestinationTest.isFinished == false && isOver == false){
+                    if(cat.isFinished == false && isOver == false ){
                         gameManagerScript.GameOver();
                         isOver = true;
-                        //SceneManager.LoadScene("Level1RollingRock");
-                        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                     }
                     countDown = null;//倒计时结束
                     

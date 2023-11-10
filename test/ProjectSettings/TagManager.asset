@@ -9,6 +9,8 @@ TagManager:
   - Moveable
   - SandGround
   - Obstacles
+  - Destination
+  - FallIntoWater
   layers:
   - Default
   - TransparentFX

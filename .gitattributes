@@ -2,3 +2,5 @@
 path filter=lfs diff=lfs merge=lfs -text
 ArtifactDB filter=lfs diff=lfs merge=lfs -text
 *.dylib filter=lfs diff=lfs merge=lfs -text
+61ca60614e7927e94c87fd67331b15f7 filter=lfs diff=lfs merge=lfs -text
+sharedassets0.assets filter=lfs diff=lfs merge=lfs -text

@@ -28,7 +28,7 @@ public class BeginningAnimation : MonoBehaviour
         waveMaxTime = Random.Range(0.1f, 0.8f);
         floatSpeed = Random.Range(18f, 23f);
         delayTime = Random.Range(0f, 0.1f);
-        waveHeight = Random.Range(0.4f, 0.6f);
+        waveHeight = Random.Range(0.1f, 0.3f);
         isReadyForPlayer = false;
     }
 

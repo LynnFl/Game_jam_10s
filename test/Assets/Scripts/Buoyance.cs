@@ -19,8 +19,7 @@ public class Buoyance : MonoBehaviour
             float LengthBesideWater = Mathf.Clamp(Depth,0,collision.bounds.size.y);
             float V = collision.bounds.size.x * LengthBesideWater * collision.bounds.size.z;
             collision.attachedRigidbody.AddForce(new Vector3(0, ρ * g * V, 0),ForceMode.Force);       
-           print(collision.name+" 深度:"+ Depth + " 水下部分高度:" + LengthBesideWater + " 水下部分体积:" + V + " 浮力:" + ρ * g * V);
-         print(collision.transform.position.y);
+     
         }
     }
 }

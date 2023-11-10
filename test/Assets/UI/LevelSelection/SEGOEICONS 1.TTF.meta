@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c0690a9bfcf23144aae9fc139bb6595b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Segoe Fluent Icons
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e6196950288002942bdf4718e415a2bd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

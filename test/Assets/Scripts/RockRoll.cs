@@ -21,7 +21,9 @@ public class RockRoll : MonoBehaviour
     public AudioClip rollingSound;
     private AudioSource audioSource;
     private int playTime;
-
+    
+    public float beginningTime;
+    public float endingTime;
 
     RangeSlider rangeSlider;
 
@@ -31,13 +33,12 @@ public class RockRoll : MonoBehaviour
         reachedEndPosition = false;
 
         rangeSlider = timeline.GetComponent<RangeSlider>();
-        rangeSlider.LowValue = 3f;
-        rangeSlider.HighValue = 7f;
+        rangeSlider.LowValue = beginningTime;
+        rangeSlider.HighValue = endingTime;
 
         rollingSpeed = 5f;
 
-        startPosition = transform.position;
-        endPosition = new Vector3(startPosition.x, startPosition.y, startPosition.z - 7.2f);
+        
        
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = rollingSound;
@@ -50,6 +51,8 @@ public class RockRoll : MonoBehaviour
 
     public void ChangeState(){
         isVideoStarted = true;
+        startPosition = transform.position;
+        endPosition = new Vector3(startPosition.x, startPosition.y, startPosition.z - 7.2f);
     }
 
     void Update()
