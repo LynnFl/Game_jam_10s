@@ -26,9 +26,9 @@ public class CatGetAway1 : MonoBehaviour
 
     void Start(){
         startPosition = transform.position;
-        endPosition = new Vector3(startPosition.x + 3f, startPosition.y, startPosition.z + 3f);
+        endPosition = new Vector3(startPosition.x - 3f, startPosition.y, startPosition.z + 3f);
         beginCatMovement = false;
-         delay = 1.9f;
+        delay = 3f;
         playTime = 1;
 
     }
@@ -36,11 +36,11 @@ public class CatGetAway1 : MonoBehaviour
     void Update()
     {
         if(beginCatMovement == false ){
-            delay = 1.9f;
+            delay = 3f;
 
         }
         else if(beginCatMovement == true ){
-                    if(delay <= 0.6f && playTime == 1){
+                    if(delay <= 1.7f && playTime == 1){
                         audioSource = GetComponent<AudioSource>();
                         audioSource.clip = keyboardSound;
                         audioSource.loop = false;
@@ -48,20 +48,14 @@ public class CatGetAway1 : MonoBehaviour
                         audioSource.Play();
                         playTime= 0;
                     }
-                    if(delay <= 0f){
-                   
-
-                        if(Vector3.Distance(transform.position, endPosition) < 0.1f){
-                            transform.position = endPosition;
-                            beginCatMovement = false;
-                        }
                     
-                        transform.position = Vector3.Lerp(transform.position, endPosition, Time.deltaTime * speed);
+                    if(delay < 1.7f)
+                    transform.position = Vector3.Lerp(transform.position, endPosition, Time.deltaTime * speed);
 
-                        if(delay < -5f){
+                    if(delay < -5f){
                             sceneLoader.LoadSceneWithFade();
-                        }
                     }
+                
                     delay = delay - Time.deltaTime;
 
             }

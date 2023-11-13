@@ -78,10 +78,24 @@ public class GameManagerScript : MonoBehaviour
 
 
     public void LoadScene1(){
-        SceneManager.LoadScene("Level1");
+        // SceneManager.LoadScene("Level1");
+        // SceneManager.sceneLoaded += OnSceneLoaded;
+
+        // Debug.LogError("Scene Loaded");
     }
-
-
+    
+    public static bool Loaded=false;
+    /// <summary>
+    /// 场景加载结束
+    /// </summary>
+    /// <param name="scene"></param>
+    /// <param name="mode"></param>
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.name == "Level1"){
+           Loaded=true;
+        }
+    }
     public void GetBacktoLevelSelection(){
         SceneManager.LoadScene("LevelSelection");
     }

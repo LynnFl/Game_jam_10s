@@ -19,11 +19,15 @@ public class BeginningAnimation : MonoBehaviour
 
    
 
-
+     private void Awake() {
+       
+    }
     void Start()
     {
-        endPosition = transform.position;
+         endPosition = transform.position;
         startPosition = new Vector3(endPosition.x, endPosition.y - 20.0f, endPosition.z);
+
+        //Debug.LogError("startPosition: " +transform.name+"//"+ startPosition);
         startTime = Time.time;
         waveMaxTime = Random.Range(0.1f, 0.8f);
         floatSpeed = Random.Range(18f, 23f);
@@ -34,7 +38,8 @@ public class BeginningAnimation : MonoBehaviour
 
     void Update()
     {
-        delayTime = delayTime - Time.deltaTime;
+       
+          delayTime = delayTime - Time.deltaTime;
         if(delayTime < 0){
             if (!reachedEndPosition){
                 float distCovered = (Time.time - startTime) * floatSpeed;
@@ -61,5 +66,7 @@ public class BeginningAnimation : MonoBehaviour
             else{
                 isReadyForPlayer = true;}
         }
+      
+       
     }
 }
