@@ -8,6 +8,7 @@ public class ObjectDrag : MonoBehaviour
     private Vector3 offset;
     public AudioClip clip;
     private AudioSource audioSource;
+    
 
 
     private void ifStart(){

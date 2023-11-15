@@ -26,7 +26,7 @@ public class CatMoving1 : MonoBehaviour
     public GameManagerScript gameManager;
 
     private Transform currentWaypoint;
-    // Start is called before the first frame update
+    
 
     private float speed;
     void Start()
@@ -48,7 +48,7 @@ public class CatMoving1 : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if(motionBegin == true && isCollided == false && DestinationTest.isFinished == false && isBlockedByRock == false){
@@ -59,7 +59,7 @@ public class CatMoving1 : MonoBehaviour
                         transform.LookAt(currentWaypoint);
                        
                 }
-               // else transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, speed * Time.deltaTime);
+              
 
                 
         }
